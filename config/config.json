@@ -1,0 +1,37 @@
+{
+    "seed": 42,
+    "train_csv": "data/train.csv",
+    "val_csv": "data/val.csv",
+    "test_csv": "data/test.csv",
+    "batch_size": 128,
+    "num_epochs": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 0.02,
+    "early_stop_patience": 20,
+    "max_seq_len_percentile": 90,
+    "embed_dim": 128,
+    "hidden_dim": 320,
+    "num_lstm_layers": 2,
+    "use_warmup": true,
+    "warmup_epochs": 10,
+    "cosine_T_max": 90,
+    "cosine_eta_min": 1e-05,
+    "max_grad_norm": 1.0,
+    "sequence_statistics": {
+        "max_sequence_length": 45892,
+        "min_sequence_length": 29,
+        "mean_sequence_length": 1323.9640927287962,
+        "median_sequence_length": 723.0,
+        "train_percentile_90_length": 3107,
+        "percentile_75_length": 1612,
+        "percentile_95_length": 4468,
+        "percentile_99_length": 8800,
+        "total_sequences": 268525,
+        "sequences_per_dataset": {
+            "train": 214820,
+            "val": 26852,
+            "test": 26853
+        }
+    },
+    "actual_max_seq_len": 3107
+}
