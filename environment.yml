@@ -1,0 +1,59 @@
+name: DeepPlantTE
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python
+  - python=3.12
+
+  # Scientific computing
+  - numpy=2.4.2
+  - scipy=1.16.3
+  - pandas=2.3.3
+  - scikit-learn=1.7.2
+
+  # Visualization
+  - matplotlib=3.10.8
+  - seaborn=0.13.2
+
+  # Jupyter environment
+  - jupyterlab=4.4.7
+  - ipykernel
+
+  # Packaging tools
+  - pip
+  - setuptools
+  - wheel
+
+  # Pip dependencies
+  - pip:
+      # Deep learning
+      - torch==2.9.1
+      - torchvision==0.24.1
+      - torchaudio==2.9.1
+      - triton==3.5.1
+
+      # Hugging Face ecosystem
+      - transformers==4.57.3
+      - datasets==4.4.2
+      - accelerate==1.12.0
+      - peft==0.18.0
+      - safetensors==0.7.0
+      - tokenizers==0.22.2
+
+      # Distributed training
+      - deepspeed==0.18.3
+
+      # Bioinformatics
+      - biopython==1.86
+      - bio==1.8.1
+
+      # Utilities
+      - einops==0.8.1
+      - tqdm==4.67.1
+      - regex==2025.11.3
+      - sentencepiece==0.2.1
+      - protobuf==6.33.2
+      - requests==2.32.5
